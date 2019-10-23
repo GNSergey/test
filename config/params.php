@@ -1,20 +1,20 @@
 <?php
 
 return [
-    'adminEmail' => 'admin@example.com',
-    'senderEmail' => 'noreply@example.com',
-    'senderName' => 'Example.com mailer',
+    'adminEmail' => 'kashtan.sergey@mail.ru',
+    'senderEmail' => 'kashtan.sergey@mail.ru',
+    'senderName' => 'https://github.com/GNSergey/test',
 ];
     
      
     return [
-        'adminEmail' => 'admin@example.com',
+        'adminEmail' => 'kashtan.sergey@mail.ru',
         'user.passwordResetTokenExpire' => 3600,
     ];
 
      
 return [
-    'adminEmail' => 'admin@devreadwrite.com',
+    'adminEmail' => 'kashtan.sergey@mail.ru',
     'user.passwordResetTokenExpire' => 3600,
-    'supportEmail' => 'robot@devreadwrite.com'
+    'supportEmail' => 'kashtan.sergey@mail.ru'
 ];

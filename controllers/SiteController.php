@@ -120,7 +120,7 @@ class SiteController extends Controller
         if (empty($model)) {
             $user = new User();
             $user->username = 'admin';
-            $user->email = 'admin@кодер.укр';
+            $user->email = 'kashtan.sergey@mail.ru';
             $user->setPassword('admin');
             $user->generateAuthKey();
             if ($user->save()) {
