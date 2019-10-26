@@ -7,7 +7,7 @@ $this->title = 'Adminka';
 <div class="site-index">
 
     <div class="jumbotron">
-        <h1>Adminka *</h1>
+        <h1>Adminka </h1>
 
        
     </div>
