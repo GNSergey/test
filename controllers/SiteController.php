@@ -69,10 +69,9 @@ class SiteController extends Controller
     //public $layout = 'layouts\main.php';
     public function actionAdminka()
 
-    {$this->layout = 'layouts\main.php';
+    {   
+        $this->layout = 'layouts\main.php';
         return $this->render('admin/adminka');
-        
-
     }
 
 
@@ -83,22 +82,33 @@ class SiteController extends Controller
      */
     public function actionLogin()
     {
-        if (!Yii::$app->user->isGuest) {
+        if (!Yii::$app->user->isGuest) 
+
+          
+        {
             return $this->goHome();
         }
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
             return $this->goBack();
         }
+
+          
         return $this->render('login', [
             'model' => $model,
         ]);
+        
+
+
+
     }
+
     /**
      * Logout action.
      *
      * @return string
-     */
+     */ 
+        
     public function actionLogout()
     {
         Yii::$app->user->logout();
