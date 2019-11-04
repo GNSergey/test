@@ -70,7 +70,7 @@ class SiteController extends Controller
     public function actionAdminka()
 
     {   
-        $this->layout = 'layouts\main.php';
+        $this->layout = 'layouts/main.php';
         return $this->render('admin/adminka');
     }
 
