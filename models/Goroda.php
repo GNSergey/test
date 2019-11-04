@@ -8,7 +8,7 @@ use Yii;
  * This is the model class for table "goroda".
  *
  * @property int $ID
- * @property string $name
+ * @property string $Gorod
  */
 class Goroda extends \yii\db\ActiveRecord
 {
@@ -26,9 +26,8 @@ class Goroda extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['ID', 'name'], 'required'],
-            [['ID'], 'integer'],
-            [['name'], 'string', 'max' => 100],
+            [['Gorod'], 'required'],
+            [['Gorod'], 'string'],
         ];
     }
 
@@ -39,7 +38,7 @@ class Goroda extends \yii\db\ActiveRecord
     {
         return [
             'ID' => 'ID',
-            'name' => 'Name',
+            'Gorod' => 'Gorod',
         ];
     }
 }

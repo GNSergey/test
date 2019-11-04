@@ -1,90 +1,14 @@
 <?php
 
-
-
-
 /* @var $this yii\web\View */
-/*
+
 $this->title = 'Adminka';
 ?>
+
 <div class="site-index">
 
     <div class="jumbotron">
+        <h1><a href="http://localhost/basic/web/index.php?r=goroda%2Findex">CRUD</a></h1>
 
-
-
-      
-
-
-
-$menuItems = [
-        	['lebele' => 'Adminka*', 'url' => ['basic\views\goroda\adminka']],
-];
-*/?>
-<?php
-/*@var $this yii\web\View */
-/*@var $GorodaList() models\Goroda */
-
-?>
-<h1>goroda/adminka</h1>
-
-<?php foreach ($gorodaList as $goroda): ?>
-	<?php echo $goroda -> first_name . ' ' . $goroda -> last_name; ?>
-
-<hr>
-<?php //endforeach;	?>
-<?php
-
-/* @var $this \yii\web\View */
-/* @var $content string */
-
-use app\widgets\Alert;
-use yii\helpers\Html;
-use yii\bootstrap\Nav;
-use yii\bootstrap\NavBar;
-use yii\widgets\Breadcrumbs;
-use app\assets\AppAsset;
-
-AppAsset::register($this);
-?>
-<?php $this->beginPage() ?>
-<!DOCTYPE html>
-<html lang="<?= Yii::$app->language ?>">
-<head>
-    <meta charset="<?= Yii::$app->charset ?>">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <?php $this->registerCsrfMetaTags() ?>
-    <title><?= Html::encode($this->title) ?></title>
-    <?php $this->head() ?>
-</head>
-<body>
-<?php $this->beginBody() ?>
-
-<div class="wrap">
-       <?php
-     
-    NavBar::begin([
-        'brandLabel' => 'My Company',
-        'brandUrl' => Yii::$app->homeUrl,
-        'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
-        ],
-    ]);
-     
-    $menuItems = [
-        ['label' => 'Goroda', 'url' => ['views/goroda/adminka']],
        
-    ];
-     
-    
-    
-    NavBar::end();
-    ?>
-
-   
-
-<?php $this->endBody() ?>
-</body>
-</html>
-<?php $this->endPage() ?>
+    </div>

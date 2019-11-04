@@ -1,9 +1,21 @@
 <?php
-/* @var $this yii\web\View */
-?>
-<h1>goroda/update</h1>
 
-<p>
-    You may change the content of this page by modifying
-    the file <code><?= __FILE__; ?></code>.
-</p>
+use yii\helpers\Html;
+
+/* @var $this yii\web\View */
+/* @var $model app\models\Goroda */
+
+$this->title = 'Update Goroda: ' . $model->ID;
+$this->params['breadcrumbs'][] = ['label' => 'Gorodas', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => $model->ID, 'url' => ['view', 'id' => $model->ID]];
+$this->params['breadcrumbs'][] = 'Update';
+?>
+<div class="goroda-update">
+
+    <h1><?= Html::encode($this->title) ?></h1>
+
+    <?= $this->render('_form', [
+        'model' => $model,
+    ]) ?>
+
+</div>
